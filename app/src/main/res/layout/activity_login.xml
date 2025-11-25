@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <!-- Center Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLogin"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="32dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="14dp"
+        app:cardBackgroundColor="#1A1A1A">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- LOGIN TITLE -->
+            <TextView
+                android:id="@+id/tvLoginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22sp"
+                android:layout_marginBottom="28dp" />
+
+            <!-- USERNAME LABEL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#BDBDBD"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- USERNAME INPUT -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:hint="Enter username"
+                android:background="@android:color/transparent"
+                android:paddingBottom="6dp"
+                android:inputType="text"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp" />
+
+            <!-- LINE -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#333333"
+                android:layout_marginBottom="24dp" />
+
+            <!-- PASSWORD LABEL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#BDBDBD"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- PASSWORD INPUT -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:hint="Enter password"
+                android:background="@android:color/transparent"
+                android:paddingBottom="6dp"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp" />
+
+            <!-- LINE -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#333333"
+                android:layout_marginBottom="32dp" />
+
+            <!-- LOGIN BUTTON -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="17sp"
+                android:backgroundTint="#AA00FF"
+                app:cornerRadius="12dp"
+                android:elevation="6dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- REGISTER LINK -->
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? Register"
+                android:textColor="#C7C7C7"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
