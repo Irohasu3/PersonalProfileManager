@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_background">
 
-    <!-- Center Card -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardLogin"
         android:layout_width="360dp"
@@ -21,7 +21,7 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
-            <!-- LOGIN TITLE -->
+
             <TextView
                 android:id="@+id/tvLoginTitle"
                 android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
                 android:textSize="22sp"
                 android:layout_marginBottom="28dp" />
 
-            <!-- USERNAME LABEL -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                 android:textSize="15sp"
                 android:layout_marginBottom="8dp" />
 
-            <!-- USERNAME INPUT -->
+
             <EditText
                 android:id="@+id/etUsername"
                 android:layout_width="match_parent"
@@ -56,14 +56,14 @@
                 android:fontFamily="sans-serif"
                 android:textSize="16sp" />
 
-            <!-- LINE -->
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#333333"
                 android:layout_marginBottom="24dp" />
 
-            <!-- PASSWORD LABEL -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 android:textSize="15sp"
                 android:layout_marginBottom="8dp" />
 
-            <!-- PASSWORD INPUT -->
+
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
@@ -86,14 +86,14 @@
                 android:fontFamily="sans-serif"
                 android:textSize="16sp" />
 
-            <!-- LINE -->
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#333333"
                 android:layout_marginBottom="32dp" />
 
-            <!-- LOGIN BUTTON -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
@@ -107,7 +107,7 @@
                 android:elevation="6dp"
                 android:layout_marginBottom="24dp" />
 
-            <!-- REGISTER LINK -->
+
             <TextView
                 android:id="@+id/tvRegister"
                 android:layout_width="wrap_content"

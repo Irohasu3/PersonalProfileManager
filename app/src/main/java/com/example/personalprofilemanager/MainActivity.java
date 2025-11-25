@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: Implement View and Add Profile actions
 
-        // Logout button click
+
         btnLogout.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LandingActivity.class);
             startActivity(intent);
-            finish(); // Clear MainActivity from back stack
+            finish();
         });
     }
 }

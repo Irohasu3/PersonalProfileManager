@@ -26,7 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnCreateAccount = findViewById(R.id.btnCreateAccount);
         tvLogin = findViewById(R.id.tvLogin);
 
-        // Create account click
+
         btnCreateAccount.setOnClickListener(v -> {
             // TODO: Add Firebase Auth registration here
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
             finish();
         });
 
-        // Redirect to Login
+
         tvLogin.setOnClickListener(v -> {
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);

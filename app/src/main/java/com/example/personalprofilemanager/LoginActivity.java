@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         tvRegister = findViewById(R.id.tvRegister);
 
-        // Login button click
+
         btnLogin.setOnClickListener(v -> {
             // TODO: Add Firebase Auth login here
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
             finish(); // Prevent back button from returning to login
         });
 
-        // Go to Register
+
         tvRegister.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(intent);
